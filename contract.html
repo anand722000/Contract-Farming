@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #a6ddee;
+        }
+        
+        
+        .header {
+            background-color: thistle;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: hsl(184, 72%, 74%);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+       
+        
+        .topnav a:hover {
+            background-color: rgb(227, 243, 157);
+            color: black;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgb(71, 71, 71);
+            margin-top: 20px;
+        }
+        
+        .container img {
+            height: 20%;
+            width: 20%;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding-top: 2%;
+            padding-left: 2%;
+        }
+        
+        .column .Deal {
+            padding: 20% 5% 5% 5%;
+            color: rgb(247, 64, 31);
+        }
+       
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+      
+        
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Welcome to Contract Portal</h1>
+        <p>Make Our Farmers Happy</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Contract Farming Laws</a>
+        <a href="#">Contract Farming Rules & Regulations</a>
+        <a href="#" style="float:right">Help</a>
+        <a href="index.html" style="float:right">Log Out</a>
+
+    </div>
+
+    <div class="row">
+        <div class="column" >
+            <img src="image/farmer1.jpg " alt="farmer1" height="60% " width="80% ">
+        </div>
+        <div class="column ">
+            <h3>Anand Singh</h3>
+            <h3>Selling: Potato</h3>
+            <h3>Price: 35rs/kg</h3>
+            <p>I am Doing agriculture of potatos since 2007, it's Desi potato. 
+                I do agriculture of that potatos only which are used as chips.
+                 I have done contract with american compnies aso.
+               if you want any type of negotiation for that i also ready.</p>
+        </div>
+        <div class="column">
+            <div class="Deal"></div><input type="button" style="border: solid 2px black;" style="border-radius: 15%;" onclick="alert('Your Deal is Confirmed...\nSoon We will contact with you') " value="Make Deal"></div>
+    </div>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="image/ajayGanna.PNG " alt="farmer2" height="60% " width="80% ">
+        </div>
+        <div class="column ">
+            <h3>Ajay Mishra</h3>
+            <h3>Selling: Sugarcane</h3>
+            <h3>Price: 100rs/kg</h3>
+            <p>My Sugarcanes are really too much sweat...
+                <br> I am selling these Sugarcane from last 5 years.
+                <br> growth of my Sugarcane is upto 5 tone.
+                <br> I am Selling in less than market price.</p>
+        </div>
+        <div class="column">
+            <div class="Deal"></div><input type="button" style="border: solid 2px black;" style="border-radius: 15%;" onclick="alert('Your Deal is Confirmed...\nSoon We will contact with you') " value="Make Deal"></div>
+    </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="column">
+            <img src="image/Anjlionion.jpg " alt="farmer3" height="60% " width="80% ">
+        </div>
+        <div class="column ">
+            <h3>Anjli Devi</h3>
+            <h3>Selling: Onion</h3>
+            <h3>Price: 40rs/kg</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <br> Debitis, cupiditate. Minus sapiente voluptates atque ut,
+                <br>maiores eaque, adipisci ipsum in saepe odio voluptatibus possimus
+                
+        </div>
+        <div class="column">
+            <div class="Deal"></div><input type="button" style="border: solid 2px black;" style="border-radius: 15%;" onclick="alert('Your Deal is Confirmed...\nSoon We will contact with you') " value="Make Deal"></div>
+    </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="column">
+            <img src="image/ajittomato.jpg " alt="farmer4 " height="60% " width="80% ">
+        </div>
+        <div class="column ">
+            <h3>Ajit Patel</h3>
+            <h3>Selling: Tomato</h3>
+            <h3>Price: 48rs/kg</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <br> Debitis, cupiditate. Minus sapiente voluptates atque ut,
+                <br>maiores eaque, adipisci ipsum in saepe odio voluptatibus possimus
+                <br>pariatur aliquid consectetur obcaecati beatae labore?</p>
+        </div>
+        <div class="column">
+            <div class="Deal"></div><input type="button" style="border: solid 2px black;" style="border-radius: 15%;" onclick="alert('Your Deal is Confirmed...\nSoon We will contact with you') " value="Make Deal"></div>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <h2>Thank you for making our Farmers Happy<br>
+        keep contracting...</h2>
+    </div>
+
+
+
+</body>
+
+</html>

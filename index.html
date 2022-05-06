@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contract Farming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="QA.html">Q & A</a></li>
+                    <li><a href="https://anandsingh.w3spaces.com/">About</a></li>
+                    <li><a href="#container3">Contact</a></li>
+                </ul>
+            </nav>
+
+
+
+        </div>
+        <div class="content">
+            <div class="text">
+                <p> CONTRACT FARMING is an agreement between farmers and Contractors( marketing firms ) for the production and supply of 
+                    agricultural products under forward agreements </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="content1">
+            <div class="text1">
+                <h1>Welcome Farmers</h1>
+                <p>For Farmers Contract Farming reduces the risk of production, 
+                    price and marketing costs. Contract farming can open up new markets 
+                    which would otherwise be unavailable to small farmers. It also 
+                    ensures higher production of better quality, financial support 
+                    in cash or kind and technical guidance to the farmer.</p>
+            </div>
+        </div>
+        <a href="farmerlogin.html"><button class="btn1">Enter as Farmer</button></a>
+    </div>
+
+
+    <div class="container2">
+        <div class="content2">
+            <div class="text2">
+                <h1>Welcome contractrs</h1>
+                <p>Contractors can enter into a direct contract with farmers 
+                    will ensure better control on the quality of the end-product 
+                    with both stakeholders having an equal interest in its success.
+                    Directly contracting with buyers will increase competition leading 
+                    to higher prices of farm produce for farmers and higher income
+                    
+                    .</p>
+            </div>
+        </div>
+        <a href="contactrlogin.html"><button class="btn2" >Enter as Contractor</button></a>
+    </div>
+
+    <div class="slide">
+        <h1 style="text-align:center">Gallery</h1>
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="image/Farmer/farmer.jpg" style="width:100%">
+            </div>
+            <div class="mySlides1">
+                <img src="image/Farmer/farmer1.jpg" style="width:100%">
+            </div>
+            
+
+            <div class="mySlides1">
+                <img src="image/Farmer/farmer2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <video width="1000" height="350" controls>
+                    <source src="image/Farmer/review.mp4" type="video/mp4">
+
+                  </video>
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+        </div>
+
+        <script>
+            var slideIndex = [1, 1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+
+            function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+            }
+
+            function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {
+                    slideIndex[no] = 1
+                }
+                if (n < 1) {
+                    slideIndex[no] = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex[no] - 1].style.display = "block";
+            }
+        </script>
+    </div>
+
+
+
+    
+<div class="feedback">
+    <h2 id="fh2">WE APPRECIATE YOUR REVIEW!</h2>
+    <h6 id="fh6">I Hope you all Enjoy and come back soon, again give us chance to serve you.</h6>
+    
+    
+    <form id="feedback">
+      <div class="pinfo">Your personal info</div>
+      
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+      <input  name="name" placeholder="Enter Name" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+        <input name="email" type="email" class="form-control" placeholder="Enter E-Mail">
+         </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+      <input  name="URL" placeholder="https://google.com" class="form-control"  type="url">
+        </div>
+      </div>
+    </div>
+    
+     <div class="pinfo">Rate our overall services.</div>
+      
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+       <select class="form-control" id="rate">
+          <option value="1star">1</option>
+          <option value="2stars">2</option>
+          <option value="3stars">3</option>
+          <option value="4stars">4</option>
+          <option value="5stars">5</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    
+     <div class="pinfo">Write your feedback.</div>
+      
+    
+    <div class="form-group">
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+      <textarea class="form-control" id="review" rows="3"></textarea>
+     
+        </div>
+      </div>
+    </div>
+    
+     <button type="submit" class="btn btn-primary"  onclick="alert('Thankyou for providing us your valuable Review')"   >Submit</button>
+    
+    
+    </form>
+
+</div>
+
+
+
+
+
+
+    <div class="container3" id="container3">
+        <footer>
+            <div class="content">
+                <div class="left box">
+                    <div class="upper">
+                        <div class="topic">About us</div>
+                        <p>Anand Pvt. LTD is a service based company and we have worked with all Tech Giant Companies in India.</p>
+                    </div>
+                    <div class="lower">
+                        <div class="topic">Contact us</div>
+                        <div class="phone">
+                            <a href="#"><i class="fas fa-phone-volume"></i>+91 123456789</a>
+                        </div>
+                        <div class="email">
+                            <a href="#"><i class="fas fa-envelope"></i>anand@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle box">
+                    <div class="topic">Our Services</div>
+                    <div><a href="#">Web Design, Development</a></div>
+                    <div><a href="#">Web UX Design, Reasearch</a></div>
+                    <div><a href="#">Web User Interface Design</a></div>
+                    <div><a href="#">Theme Development, Design</a></div>
+                    <div><a href="#">Mobile Application Design</a></div>
+                </div>
+                <div class="right box">
+                    <div class="topic">Subscribe us</div>
+                    <form action="#">
+                        <input type="text" placeholder="Enter email address">
+                        <input type="submit" name="" value="Send">
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Copyright © 2021 <a href="#">Anand Pvt Ltd.</a> All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

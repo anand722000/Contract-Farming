@@ -1,0 +1,83 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  padding-left: 10%;
+  font-family: 'Times New Roman', Times, serif;  
+  background-image: url(image/contractr.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}  
+button {   
+       background-color: #58b1ec;   
+       width: 15%;  
+        color: rgb(0, 0, 0);   
+        padding: 0px ;   
+        margin: 10px;   
+        border: 2px solid black;   
+        cursor: pointer;   
+        border-radius: 15px;
+         }   
+ form {  width: 40%;
+        border: 3px solid #5906f1;   
+        border-radius: 10%;
+    }   
+ input[type=text], input[type=password] {   
+        width: 45%;   
+        padding: 12px 15px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7; 
+    }   
+
+.login{
+    width: auto;   
+        padding: 0px 8px;  
+        margin: 15px 0px;  
+}
+
+  .signup {   
+        width: auto;   
+        padding: 0px 8px;  
+        margin: 15px 0px;  
+  }
+        
+
+ .container {  
+        padding: 10px  0px 0px 20px;
+        background-image: url(image/lgb.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: rgb(0, 0, 0);
+        border-radius: 10%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 120%;
+
+    }   
+</style>   
+</head>    
+<body>    
+   <center><h1> Welcome to Contract Farming Login Page</h1> </center>
+    <form>  
+        <div class="container">   
+            <h3><label>Username : </label></h3> 
+            <input type="text" placeholder="Enter Username" name="username" required>  <br>
+            <h3><label>Password : </label> </h3> 
+            <input type="password" placeholder="Enter Password" name="password" required>  <br>
+            <a href="contract.html"><button type="button" class="login" onclick="alert('Login Succesfull \nNow You are Directing to Contract Making Page')" ><h3>Login</h3></button></a><br>
+            <input type="checkbox" checked="checked"> Remember me   <br>
+            <a href="contractrsignup.html"> <button type="button" class="signup"><h3>SignUp</h3></button></a>
+            Forgot <a href="#"> password? </a>
+        </div>   
+    </form>     
+</body>     
+</html>  
+
